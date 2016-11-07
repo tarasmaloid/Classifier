@@ -16,12 +16,12 @@ namespace Classifier
             int i = 0;
             foreach (string fileName in Directory.GetFiles(@pathIn))
             {
-                System.Drawing.Image image = System.Drawing.Image.FromFile(fileName);
+                System.Drawing.Image image = Image.FromFile(fileName);
                 image = ScaleImage(image, 64, 128);
                 Bitmap grayscaleImage = MakeGrayscale3((Bitmap)image);
                 grayscaleImage = ContrastStretch(grayscaleImage);
 
-                grayscaleImage.Save(@pathOut + "_" + i + ".png", ImageFormat.Png);
+                grayscaleImage.Save(@pathOut + "\\_" + i + ".png", ImageFormat.Png);
                 i++;
             }
         }

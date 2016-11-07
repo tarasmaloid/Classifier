@@ -24,7 +24,10 @@ namespace Classifier
             if (FBD.ShowDialog() == DialogResult.OK)
             {
                 DirectoryInfo myFolder = new DirectoryInfo(FBD.SelectedPath);
-               
+                foreach (FileInfo T in myFolder.GetFiles())
+                {
+                    ImageFunctions.ConvertImage(FBD.SelectedPath + "\\" + T.Name,@"\Output");
+                }
             }
         }
     }

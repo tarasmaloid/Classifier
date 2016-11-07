@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnChooseFolder1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnChooseFolder1
+            // 
+            this.btnChooseFolder1.Location = new System.Drawing.Point(257, 12);
+            this.btnChooseFolder1.Name = "btnChooseFolder1";
+            this.btnChooseFolder1.Size = new System.Drawing.Size(75, 41);
+            this.btnChooseFolder1.TabIndex = 0;
+            this.btnChooseFolder1.Text = "Choose folder";
+            this.btnChooseFolder1.UseVisualStyleBackColor = true;
+            this.btnChooseFolder1.Click += new System.EventHandler(this.btnChooseFolder1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(344, 289);
+            this.Controls.Add(this.btnChooseFolder1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnChooseFolder1;
     }
 }
 

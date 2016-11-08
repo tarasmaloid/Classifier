@@ -23,8 +23,7 @@ namespace Classifier
         private Human human;
 
         public Form1()
-        {
-            
+        {            
             InitializeComponent();
         }
 
@@ -44,7 +43,6 @@ namespace Classifier
 
         private void addAllImagesToDBToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             FBD = new FolderBrowserDialog();
             if (FBD.ShowDialog() == DialogResult.OK)
             {
@@ -65,7 +63,6 @@ namespace Classifier
                         humanModel = new HumanModel();
                         humanModel.Insert(human);
                 }
-
             }
         }
 
